@@ -1,0 +1,594 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f1e8;
+    color: #303b35;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 8%;
+
+    background: #27352f;
+}
+
+.logo {
+    color: #f5f1e8;
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #f5f1e8;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #a9bca8;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home {
+    min-height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 90px 10%;
+
+    background: #f5f1e8;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #718773;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.home-content h2 {
+    color: #27352f;
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.home-content h2 span {
+    color: #718773;
+}
+
+.intro {
+    color: #59635c;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.intro strong {
+    color: #27352f;
+}
+
+.home-button {
+    display: inline-block;
+
+    background: #718773;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 15px 30px;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+.home-button:hover {
+    background: #4f6355;
+}
+
+
+/* =========================
+   HOME CARD
+========================= */
+
+.home-box {
+    width: 330px;
+    min-height: 350px;
+
+    background: #dfe7dc;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border: 1px solid #c5d0c2;
+}
+
+.letter {
+    width: 145px;
+    height: 145px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #718773;
+    color: white;
+
+    border-radius: 50%;
+
+    font-family: Georgia, serif;
+    font-size: 70px;
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+.home-box h3 {
+    color: #27352f;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.home-box p {
+    color: #69766d;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 110px 10%;
+
+    background: #dfe7dc;
+}
+
+.about-title p,
+.services-heading p,
+.favorites-heading p,
+.contact-heading p {
+    color: #718773;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.about-title h2,
+.services-heading h2,
+.favorites-heading h2,
+.contact-heading h2 {
+    color: #27352f;
+    font-family: Georgia, serif;
+    font-size: 52px;
+}
+
+.about-content {
+    max-width: 950px;
+
+    display: flex;
+    gap: 60px;
+
+    margin: 60px auto 0;
+}
+
+.about-number {
+    color: #718773;
+    font-family: Georgia, serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.about-text {
+    max-width: 700px;
+}
+
+.about-text p {
+    color: #56635a;
+    font-size: 19px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    padding: 110px 10%;
+
+    background: #f5f1e8;
+}
+
+.services-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.service-list {
+    max-width: 950px;
+    margin: auto;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    padding: 30px 15px;
+
+    border-top: 1px solid #c9c7bc;
+}
+
+.service-item:last-child {
+    border-bottom: 1px solid #c9c7bc;
+}
+
+.service-number {
+    color: #718773;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    min-width: 40px;
+}
+
+.service-item h3 {
+    color: #27352f;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #667169;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FAVORITES
+========================= */
+
+.favorites {
+    padding: 110px 10%;
+
+    background: #dfe7dc;
+}
+
+.favorites-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.favorite-grid {
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    margin: auto;
+}
+
+.favorite-card {
+    background: #f5f1e8;
+
+    padding: 40px;
+
+    min-height: 280px;
+
+    border-left: 5px solid #718773;
+
+    transition: 0.3s;
+}
+
+.favorite-card:hover {
+    transform: translateY(-5px);
+}
+
+.favorite-label {
+    color: #718773;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.favorite-icon {
+    color: #718773;
+    font-family: Georgia, serif;
+    font-size: 40px;
+
+    margin: 25px 0 15px;
+}
+
+.favorite-card h3 {
+    color: #27352f;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.favorite-card p {
+    color: #68736b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 110px 10%;
+
+    background: #f5f1e8;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-box {
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 50px;
+
+    background: #27352f;
+
+    color: #f5f1e8;
+
+    text-align: center;
+}
+
+.contact-box h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-box > p {
+    color: #cbd4ca;
+    margin-bottom: 35px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.contact-details p {
+    color: #cbd4ca;
+    line-height: 1.7;
+}
+
+.contact-details strong {
+    color: #a9bca8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #1e2924;
+
+    color: #f5f1e8;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer p {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+footer span {
+    color: #aab5ac;
+    font-size: 13px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .home-content h2 {
+        font-size: 48px;
+    }
+
+    .home-box {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .about-content {
+        gap: 30px;
+    }
+
+    .favorite-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 18px 10px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .home {
+        padding: 70px 20px;
+    }
+
+    .home-content h2 {
+        font-size: 38px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .home-box {
+        min-height: 300px;
+    }
+
+    .letter {
+        width: 125px;
+        height: 125px;
+        font-size: 60px;
+    }
+
+    .about,
+    .services,
+    .favorites,
+    .contact {
+        padding: 80px 20px;
+    }
+
+    .about-title h2,
+    .services-heading h2,
+    .favorites-heading h2,
+    .contact-heading h2 {
+        font-size: 40px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-number {
+        font-size: 45px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+    }
+
+    .service-item {
+        gap: 15px;
+        padding: 25px 5px;
+    }
+
+    .service-item h3 {
+        font-size: 21px;
+    }
+
+    .service-item p {
+        font-size: 15px;
+    }
+
+    .favorite-card {
+        padding: 30px;
+    }
+
+    .contact-box {
+        padding: 35px 20px;
+    }
+
+    .contact-box h3 {
+        font-size: 25px;
+    }
+}
